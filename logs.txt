@@ -1,0 +1,17 @@
+C:\Users\ANJA\Desktop\SI_2026_Lab1_243065>git log --oneline --all --graph
+*   572d671 (HEAD -> master, origin/master) Merge feature-borrow-book into master
+|\
+| *   dbee4f2 (feature-borrow-book) Merge master into feature-borrow-book
+| |\
+| * | f106b3a (origin/feature-borrow-book) Implement borrow book
+* | |   8616021 Merge feature-genre-report into master
+|\ \ \
+| |_|/
+|/| |
+| * | 8580535 (origin/feature-genre-report, feature-genre-report) Implement genre report
+| |/
+* / bcb464b Update borrow message on master
+|/
+* 38d80d6 (origin/feature-search-books, feature-search-books) Implement book search
+* f46145e Add starter code
+* 2f96b27 Initial commit

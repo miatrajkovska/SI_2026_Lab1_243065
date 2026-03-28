@@ -1,0 +1,29 @@
+4. git init - inicijalizacija na git vo tekovniot direktorium
+5. git remote add origin https://github.com/miatrajkovska/SI_2026_Lab1_243065.git - go povrzuvam mojot so remote repozitoriumot na mojot github
+6. git add README.md za da ja dodademe na stage i git commit -m "Initial commit" za commit so odredena poraka
+7. git add SI2026Lab1Main.java dodavame na staging i git commit -m "Add starter code" za vtoriot commit
+8. git push origin master - pravime push i ja sinhronizirame nasata master so onaa na remote repozitoriumot
+9. git checkout -b feature-search-books - kreirame nov branch i se prefrlame na nego direktno
+10. git add SI2026Lab1Main.java go stavame na staging i pravime commit so git commit -m "Implement book search"
+11. git push origin feature-search-books za da ja dodademe novata granka na remote repozitoriumot
+12. git checkout master - se prefrluvame na master i pravime git merge feature-search-books za da se spoi branchot vo master
+13. spojuvanjeto se pravi so fast-forward spojuvanje zatoa sto master se nemase dvizeno ponapred pa samo head pokazuvacot se stavi na najnoviot commit na grankata i isto nemase konflikti 
+git log --oneline --graph --all
+* 38d80d6 (HEAD -> master, origin/feature-search-books, feature-search-books) Implement book search
+* f46145e (origin/master) Add starter code
+* 2f96b27 Initial commit
+14. git push origin master za sinhronizacija na remote repo
+15. kreirame novi branches git branch feature-borrow-book i git branch feature-genre-report
+16. git checkout feature-borrow-book se prefrluvame na toj branch, git add SI2026Lab1Main.java i git commit -m "Implement borrow book"
+17. git checkout master, git add SI2026Lab1Main.java i git commit -m "Update borrow message on master"
+18. git checkout feature-genre-report, git add SI2026Lab1Main.java i git commit -m "Implement genre report"
+19. git checkout feature-borrow-book i git push origin feature-borrow-book
+20. git checkout feature-genre-report i git push origin feature-genre-report
+21. git checkout feature-borrow-book se prefrlame na taa granka, git merge master ja spojuvame master vo tekovnata
+22. nastana konflikt bidejki dvete granki ja imaa smeneto linijata za pecatenje, racno ja ostaviv linijata koja smetav deka treba da ostane, drugite gi izbrisav. ova bese recursive merge strategija bidejkji grankite imaat razlicna istorija na commiti. git status dava: On branch feature-borrow-book
+nothing to commit, working tree clean
+23. se napravi merge so recursive strategija zatoa sto dvete imaa razlicna istorija pa mora da gi spoi dvete, nemase konflikti
+24. kaj mene ova pokaza konflikt posto imav dve linii na povikuvanje na metod na ista linija, pa gi zadrzav i dvata, a merge bese recursive zosto feature-borrow-book imase svoi commits i razlicna istorija od master
+25. git push origin master
+26. kreiram logs.txt i 243065.txt i pravam final commit
+27. git push origin master
